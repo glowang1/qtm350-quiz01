@@ -19,8 +19,9 @@ git commit -m Update project files
 touch .gitignore && git add .gitignore
 echo temp/dataset0?.csv >> .gitignore
 cat .gitignore
-commit -m "add .gitignore file"
+git commit -m "add .gitignore file"
 git switch main
 git merge feature-update
+git add commands.txt
 git commit -m "all commands used"
 git push origin main
