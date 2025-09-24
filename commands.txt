@@ -15,13 +15,14 @@ mv ../data/raw-data.csv ../data/input-data.csv
 git add ../data/input-data.csv 
 mkdir -p ../scripts/backup && cp ../scripts/*.py ../scripts/backup/ && git add ../scripts/backup 
 rm ../docs/documentation.md 
-git commit -m Update project files
+git commit -m "Update project files"
 touch .gitignore && git add .gitignore
 echo temp/dataset0?.csv >> .gitignore
 cat .gitignore
 git commit -m "add .gitignore file"
 git switch main
 git merge feature-update
+git add -A
 git add commands.txt
 git commit -m "all commands used"
 git push origin main
